@@ -1,7 +1,26 @@
-$text-color: #f4f4f4;
+$text-color: #f4f4f495;
 
 $heading-color: #28064f;
 
-$buttons-colors: #0e6cff, #ff8700, #4caf50;
+$buttons-colors: (
+  first: #0e6cff,
+  second: #ff8700,
+  third: #4caf50,
+);
 
 $bg-hero: #640fc5;
+
+body,
+a,
+button {
+  color: $text-color;
+}
+
+header,
+#hero-section {
+  background-color: $bg-hero;
+}
+
+#logo {
+  color: black;
+}

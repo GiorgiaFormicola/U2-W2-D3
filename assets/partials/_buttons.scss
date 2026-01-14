@@ -1,0 +1,5 @@
+@each $number, $color in $buttons-colors {
+  .#{$number}-button {
+    background-color: $color;
+  }
+}

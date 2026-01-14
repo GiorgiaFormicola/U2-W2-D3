@@ -1,0 +1,22 @@
+$directions: "block", "inline";
+
+$sizes-map: (
+  sm: 0.25em,
+  nm: 1em,
+  md: 1.5em,
+  lg: 3em,
+  xl: 4em,
+  xxl: 6em,
+);
+
+@each $direction in $directions {
+  @each $size, $value in $sizes-map {
+    .padding-#{$direction}-#{$size} {
+      padding-#{$direction}: $value;
+    }
+
+    .margin-#{$direction}-#{$size} {
+      margin-#{$direction}: $value;
+    }
+  }
+}

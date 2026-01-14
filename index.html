@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <header>
+    <header class="padding-block-md padding-inline-xxl">
       <nav>
-        <a href="#">SASS</a>
+        <a id="logo" href="#">SASS</a>
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">About</a></li>
@@ -18,23 +18,25 @@
       </nav>
     </header>
     <main>
-      <section id="hero-section">
-        <div id="headline">
-          <h1>Sviluppo e Web Design</h1>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est eligendi tempore atque laborum. Quisquam nemo at non. Corrupti, vitae dolore.</p>
+      <section id="hero-section" class="padding-block-xxl padding-inline-xxl">
+        <div id="headline" class="padding-block-md">
+          <h1>Sviluppo e <br />Web Design</h1>
+          <p class="padding-block-nm">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est eligendi tempore atque laborum. Quisquam nemo at non. Corrupti, vitae dolore.
+          </p>
           <div>
-            <button>Approfondisci</button>
-            <button>Accedi</button>
-            <button>Contattaci</button>
+            <button class="first-button" class>Approfondisci</button>
+            <button class="second-button">Accedi</button>
+            <button class="third-button">Contattaci</button>
           </div>
         </div>
-        <div><img src="./assets/imgs/placeholder.jpg" alt="Placeholder" /></div>
+        <img src="./assets/imgs/placeholder.jpg" alt="Placeholder" />
       </section>
-      <section id="grid">
-        <div><img src="./assets/imgs/placeholder.jpg" alt="Placeholder" /></div>
-        <div><img src="./assets/imgs/placeholder.jpg" alt="Placeholder" /></div>
-        <div><img src="./assets/imgs/placeholder.jpg" alt="Placeholder" /></div>
-        <div><img src="./assets/imgs/placeholder.jpg" alt="Placeholder" /></div>
+      <section id="grid-section" class="padding-block-xxl">
+        <img src="./assets/imgs/placeholder.jpg" alt="Placeholder" />
+        <img src="./assets/imgs/placeholder.jpg" alt="Placeholder" />
+        <img src="./assets/imgs/placeholder.jpg" alt="Placeholder" />
+        <img src="./assets/imgs/placeholder.jpg" alt="Placeholder" />
       </section>
     </main>
   </body>

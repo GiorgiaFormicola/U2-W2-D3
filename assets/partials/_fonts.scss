@@ -1,0 +1,36 @@
+$xxs: 0.25em;
+$xs: 0.5em;
+$sm: 0.9em;
+$nm: 1.25em;
+$md: 2em;
+$lg: 2.5em;
+$xl: 3em;
+$xxl: 3.5em;
+
+body {
+  font: {
+    family: Arial, Helvetica, sans-serif;
+    size: $sm;
+  }
+}
+
+a,
+button {
+  font-size: $xs;
+}
+
+#logo {
+  font: {
+    size: $nm;
+    weight: 800;
+  }
+}
+
+@mixin title-big {
+  font: {
+    size: $xxl;
+    weight: 800;
+  }
+  letter-spacing: -3px;
+  color: $heading-color;
+}

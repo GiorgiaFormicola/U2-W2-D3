@@ -1,0 +1,28 @@
+// @mixin custom-fade-in($length, $start-point, $end-point, $delay, $element-name) {
+//   @keyframes fade-in {
+//     0% {
+//       transform: translateY(-20px);
+//     }
+//     100% {
+//       transform: translateY(0px);
+//     }
+//   }
+// }
+
+@mixin custom-fade-in($length, $start, $end, $delay, $name) {
+  @keyframes fadeIn {
+    0% {
+    }
+
+    100% {
+      opacity: 100%;
+      transform: translateY(#{$end});
+    }
+  }
+
+  #{$name} {
+    opacity: 0%;
+    transform: translateY(#{$start});
+    animation: fadeIn #{$length} ease #{$delay} forwards;
+  }
+}

@@ -1,0 +1,57 @@
+header {
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    gap: $nm;
+  }
+}
+
+#hero-section {
+  width: 100%;
+  position: relative;
+  @include custom-fade-in(800ms, -2.2em, 0, 400ms, h1);
+  @include custom-fade-in(800ms, 11em, 0, 400ms, p);
+  @include custom-fade-in(800ms, 15em, 0, 900ms, ".first-button");
+  @include custom-fade-in(800ms, 15em, 0, 1100ms, ".second-button");
+  @include custom-fade-in(800ms, 15em, 0, 1300ms, ".third-button");
+  @include custom-fade-in(800ms, -4.9rem, 0, 200ms, img);
+
+  #headline {
+    width: 50%;
+
+    h1 {
+      @include title-big();
+    }
+
+    p {
+      line-height: 1.5em;
+    }
+
+    button {
+      @include custom-button;
+    }
+  }
+
+  img {
+    width: 28.5em;
+    position: absolute;
+    bottom: -3.5em;
+    right: 6em;
+    @include floating();
+  }
+}
+
+#grid-section {
+  @include grid(4);
+
+  img {
+    @include floating($radius: 0.5rem, $shadow: 0px 0px 12px 11px rgba(0, 0, 0, 0.088), $border: none);
+  }
+}
